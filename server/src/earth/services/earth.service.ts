@@ -30,7 +30,6 @@ export class EarthService {
 
 
       if (alreadyExist) {
-        console.log("exist");
         return alreadyExist;
       }
 
