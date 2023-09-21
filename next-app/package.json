@@ -24,6 +24,11 @@
     "typescript": "5.2.2"
   },
   "devDependencies": {
-    "daisyui": "^3.7.6"
+    "@types/styled-components": "^5.1.27",
+    "@types/three": "^0.156.0",
+    "daisyui": "^3.7.6",
+    "framer-motion": "^10.16.4",
+    "styled-components": "^6.0.8",
+    "three": "^0.156.1"
   }
 }
