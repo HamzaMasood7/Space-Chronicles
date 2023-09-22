@@ -20,6 +20,7 @@ const PictureOfDay = () => {
     const apiUrl = 'http://localhost:5000/earth/today';
 
 
+
     axios
       .get(apiUrl)
       .then((response) => {
