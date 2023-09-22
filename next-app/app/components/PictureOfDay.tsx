@@ -1,5 +1,6 @@
-
-import React from 'react';
+"use client";
+import axios from 'axios';
+import React, { useState, useEffect } from 'react';
 
 
 interface PicDay {
@@ -7,15 +8,29 @@ interface PicDay {
   explanation: string;
   url: string;
   hdUrl: string
+  date: string
 }
 
 
-const PictureOfDay = async () => {
+const PictureOfDay = () => {
+
+  const [data, setData] = useState<PicDay | null>(null); // Set the initial state to null.
+
+  useEffect(() => {
+    const apiUrl = 'http://localhost:5000/earth/today';
 
 
-  const apiUrl = 'http://localhost:5000/earth/today';
-  const res = await fetch(apiUrl);
-  const data: PicDay = await res.json();
+    axios
+      .get(apiUrl)
+      .then((response) => {
+        const responseData: PicDay = response.data;
+        setData(responseData);
+      })
+      .catch((error) => {
+        console.error('Error fetching data:', error);
+        setData(null);
+      });
+  }, []);
 
 
   return (
@@ -33,15 +48,17 @@ const PictureOfDay = async () => {
                 {/* <div className="badge badge-secondary">{data.explanation}</div> */}
               </h2>
               {/* <p>{data.explanation}</p> */}
-              {/* <div className="card-actions justify-end">
-                <div className="badge badge-outline">{data.explanation}</div>
-                <div className="badge badge-outline">Products</div>
-              </div> */}
+              <div className="card-actions justify-end">
+                {/* <div className="badge badge-outline">{data.explanation}</div> */}
+                <div className="badge badge-outline">{data.date}</div>
+              </div>
             </div>
           </div>
         </>
       ) : (
-        'Loading...'
+        <button className="btn btn-square">
+          <span className="loading loading-spinner"></span>
+        </button>
       )}
     </div>
   )
