@@ -5,10 +5,7 @@
 
 body{
 
-  /* background-color: wheat; */
-  background-image: url(https://www.nasa.gov/sites/default/files/thumbnails/image/hubble_eso300-16_potw2334a.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
+  background-color: black;
   height: 100vh;
+
 }
