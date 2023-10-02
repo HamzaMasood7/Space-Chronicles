@@ -2,6 +2,17 @@
 
 # NASA Space Journey Visualization App
 
+## Table of Contents
+
+- [Overview](#overview)
+- [features](#features)
+- [Technologies Used](#technologies-used)
+- [Getting Started](#getting-started)
+- [API Integration](#api-integration)
+- [Contributing](#contributing)
+- [Issues and Feedback](#issues-and-feedback)
+- [License](#license)
+
 ## Overview
 
 Welcome to the NASA Space Journey Visualization App! This application provides a captivating journey through space by visualizing mesmerizing images from the NASA API. Explore the beauty and wonder of our universe right from your device.
@@ -45,6 +56,12 @@ If you would like to contribute to this project, please follow these steps:
 3. Make your changes and commit them with clear and concise messages.
 4. Push your changes to your fork.
 5. Create a pull request to the main repository's `develop` branch.
+
+Our Contributors:
+
+<a href="https://github.com/HamzaMasood7/Space-Chronicles/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=HamzaMasood7/Space-Chronicles" />
+</a>
 
 ## Issues and Feedback
 
