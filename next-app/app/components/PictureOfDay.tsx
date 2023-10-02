@@ -14,8 +14,7 @@ interface PicDay {
 
 const PictureOfDay = () => {
 
-  const [data, setData] = useState<PicDay | null>(null); // Set the initial state to null.
-
+  const [data, setData] = useState<PicDay | null>(null);
   useEffect(() => {
     const apiUrl = 'http://localhost:5000/earth/today';
 
