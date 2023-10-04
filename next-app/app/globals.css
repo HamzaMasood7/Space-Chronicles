@@ -2,10 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+    scrollbar-gutter: stable;
+}
 
-body{
-
-  background-color: black;
-  height: 100vh;
-
+body {
+    background-color: black;
+    height: 100vh;
 }
